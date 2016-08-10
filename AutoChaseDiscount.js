@@ -2,6 +2,7 @@ var index=1;
 var card_li=$(".more_list li");
 var card_list=[];
 var x;
+//$("#smsCode").val(523)
 for(i=0;i<card_li.length;i++){
 	x=card_li[i];
 	console.log(x)
@@ -13,8 +14,8 @@ for(i=0;i<card_li.length;i++){
 }
 
 
-var f =$("<div><input id=\"CrackIt\"class=\"btn_blue\" role=\"button\" style=\"float:right\" value=\"Start\" ></div>");
-var stop =$("<div><input id=\"StopIt\"class=\"btn_blue\" role=\"button\" style=\"float:right\" value=\"Stop\" ></div>");
+var f =$("<div id=\"CrackIt\"class=\"btn_blue\" role=\"button\" style=\"float:right\" >Start </div>");
+var stop =$("<div id=\"StopIt\"class=\"btn_blue\" role=\"button\" style=\"float:right\"  >Stop</div>");
 stop.insertAfter($("#order-detail-info div:last"));
 f.insertAfter($("#order-detail-info div:last"));
 $("#StopIt").click(function() {
@@ -57,6 +58,6 @@ function trypay(){
 		                + currentdate.getSeconds() + ":"
 		                + currentdate.getMilliseconds();
     	console.log("Discount not start! "+datetime);
-    };
+    }
 }
 //var inte=self.setInterval("trypay()",1000);
